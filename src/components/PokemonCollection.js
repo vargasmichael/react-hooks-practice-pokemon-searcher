@@ -5,7 +5,7 @@ import { Card } from "semantic-ui-react";
 function PokemonCollection({pokemon}) {
   const cards = pokemon.map((poke) => 
   //map through each poke
-    <PokemonCard pokemon={poke}/>
+    <PokemonCard key={poke.id} pokemon={poke}/>
     //pokemon get passed up from pokemon card
 
   )
